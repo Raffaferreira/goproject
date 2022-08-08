@@ -19,15 +19,9 @@ func (c *Car) driveAt() {
 }
 
 func main() {
-	var valor = 10
-	var moeda = 1
 
-	if valor > moeda {
-		fmt.Println("É maior")
-	}
-
-	// x := 10
-	// fmt.Println(&x)
+	x := 10
+	fmt.Println(&x)
 	// res := abc(&x)
 	// fmt.Println(res)
 
