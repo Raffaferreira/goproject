@@ -19,7 +19,11 @@ func (c *Car) driveAt() {
 }
 
 func main() {
+	//AgileEngine Test to Paxos - Golang Engineer for Paxos
 
+}
+
+func leftover() {
 	x := 10
 	fmt.Println(&x)
 	// res := abc(&x)
@@ -40,7 +44,6 @@ func main() {
 	// m["Fraulyn"] = 24
 	// m["Giovana"] = 19
 	// fmt.Println(m["Fraulyn"])
-
 }
 
 func whiteloop() int {
