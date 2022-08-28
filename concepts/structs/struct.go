@@ -1,4 +1,4 @@
-package exemplo
+package structs
 
 import "fmt"
 

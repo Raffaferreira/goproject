@@ -1,6 +1,7 @@
 package main
 
 import (
+	"example/main/concepts/api"
 	"fmt"
 )
 
@@ -26,6 +27,8 @@ func main() {
 func leftover() {
 	x := 10
 	fmt.Println(&x)
+
+	api.MainApi()
 	// res := abc(&x)
 	// fmt.Println(res)
 

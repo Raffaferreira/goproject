@@ -1,8 +1,7 @@
 package modificadoresDeAcesso
 
 import (
-	"example/main/exemplo"
-	exemplopack "example/main/exemplo"
+	exemplo "example/main/concepts/structs"
 	"fmt"
 )
 
@@ -13,12 +12,12 @@ type Car struct {
 }
 
 func MainExemplo() {
-	exemplopack.PrintExemplo()
+	exemplo.PrintExemplo()
 
 	carro := Car{
 		CarName: "Onix Plus",
 		CarYear: 2021,
-		Casa: exemplopack.Casa{
+		Casa: exemplo.Casa{
 			Cor:    "Azul",
 			Numero: 98,
 			//endereco nao esta acessivel
