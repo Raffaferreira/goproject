@@ -49,6 +49,7 @@ func JsonArray() {
 }
 
 func NestedJsonObject() {
+	//birdJson := `{"species":"pigeon","description":"likes to perch on rocks", "dimensions":{"height":24,"width":10}}`
 	file3, err := ioutil.ReadFile("./files/birdnested.json")
 
 	if err != nil {
@@ -62,4 +63,25 @@ func NestedJsonObject() {
 	fmt.Println(bird.Description)
 	fmt.Println(bird.Dimensions.Height)
 	fmt.Println(bird.Dimensions.Width)
+}
+
+func UnstructuredDataJson() {
+	content, err := ioutil.ReadFile("./files/config.json")
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+
+	// Now let's unmarshall the data into `payload`
+	var payload map[string]interface{}
+
+	err = json.Unmarshal(content, &payload)
+
+	if err != nil {
+		log.Fatal("Error during Unmarshal(): ", err)
+	}
+
+	// Let's print the unmarshalled data!
+	log.Printf("origin: %s\n", payload["origin"])
+	log.Printf("user: %s\n", payload["user"])
+	log.Printf("status: %t\n", payload["active"])
 }
