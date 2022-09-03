@@ -11,7 +11,7 @@ func Main2() {
 }
 
 func JsonArrayFile() {
-	file, err := ioutil.ReadFile("birds.json")
+	file, err := ioutil.ReadFile("./files/birds.json")
 
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)

@@ -3,6 +3,8 @@ package jsonpack
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 )
 
 type BirdList struct {
@@ -32,9 +34,32 @@ func Main() {
 
 // Convert an string to an object Struct
 func JsonArray() {
-	birdJson := `[{"species":"pigeon","decription":"likes to perch on rocks"},{"species":"eagle","description":"bird of prey"}]`
+	file2, err := ioutil.ReadFile("./files/birds.json")
+
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+
+	//birdJson := `[{"species":"pigeon","decription":"likes to perch on rocks"},{"species":"eagle","description":"bird of prey"}]`
+
 	var birds []Bird
-	json.Unmarshal([]byte(birdJson), &birds)
+	json.Unmarshal([]byte(file2), &birds)
 
 	fmt.Printf("Birds : %+v", birds)
+}
+
+func NestedJsonObject() {
+	file3, err := ioutil.ReadFile("./files/birdnested.json")
+
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+	var bird Bird
+	json.Unmarshal([]byte(file3), &bird)
+
+	fmt.Println(bird)
+	fmt.Println(bird.Species)
+	fmt.Println(bird.Description)
+	fmt.Println(bird.Dimensions.Height)
+	fmt.Println(bird.Dimensions.Width)
 }

@@ -20,7 +20,6 @@ func (c *Car) driveAt() {
 }
 
 func main() {
-	//AgileEngine Test to Paxos - Golang Engineer for Paxos
 
 }
 
