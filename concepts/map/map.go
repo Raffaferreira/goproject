@@ -2,7 +2,7 @@ package mapitem
 
 import "fmt"
 
-func Main() {
+func MainMap() {
 	var colorMap map[string]string
 	fmt.Println(colorMap)
 

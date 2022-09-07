@@ -2,6 +2,7 @@ package main
 
 import (
 	"example/main/concepts/api"
+	mapitem "example/main/concepts/map"
 	"fmt"
 )
 
@@ -20,7 +21,7 @@ func (c *Car) driveAt() {
 }
 
 func main() {
-
+	mapitem.MainMap()
 }
 
 func leftover() {
