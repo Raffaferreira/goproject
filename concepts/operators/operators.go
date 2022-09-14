@@ -15,6 +15,8 @@ func Operators() {
 	subtraction()
 	unusedDataTypes()
 	unaryOperation()
+	multiplication()
+	division()
 }
 
 func integers() {
@@ -63,9 +65,19 @@ func unaryOperation() {
 }
 
 func multiplication() {
-
+	k := 100.2
+	j := 10.2
+	result := k * j
+	fmt.Println(result)
 }
 
 func division() {
+	m := 80
+	n := 6
+	fmt.Println(m / n) // output 13
 
+	s := 80
+	t := 6
+	r := float64(s) / float64(t)
+	fmt.Println(r) // Output 13.333333333333334
 }
