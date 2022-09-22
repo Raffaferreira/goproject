@@ -97,3 +97,15 @@ func modulo() {
 	s := math.Mod(q, r)
 	fmt.Println(s)
 }
+
+// We need to keep in mind that operators will be evaluated in order of precedence, not from left to right or right to left.
+// We may read it left to right, but multiplication will be done first, so if we were to print u, we would receive the following value
+// One way to remember the order of operation is through the acronym PEMDAS:
+func OperatorPrecedence() {
+	u := 10 + 10*5
+	fmt.Println(u) //output 60
+
+	l := (10 + 10) * 5
+	fmt.Println(l) //output 100
+
+}
