@@ -1,6 +1,9 @@
 package operators
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 //	.	x + y	Sum of x and y
 //	.	x - y	Difference of x and y
@@ -80,4 +83,17 @@ func division() {
 	t := 6
 	r := float64(s) / float64(t)
 	fmt.Println(r) // Output 13.333333333333334
+}
+
+//The % operator is the modulo, which returns the remainder rather than the quotient after division.
+func modulo() {
+	o := 85
+	p := 15
+
+	fmt.Println(o % p)
+
+	q := 36.0
+	r := 8.0
+	s := math.Mod(q, r)
+	fmt.Println(s)
 }
