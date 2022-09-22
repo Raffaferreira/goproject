@@ -109,3 +109,38 @@ func OperatorPrecedence() {
 	fmt.Println(l) //output 100
 
 }
+
+func assignmentOperators() {
+	w := 5
+	w += 1
+	fmt.Println(w) // output 6
+
+	values := []int{0, 1, 2, 3, 4, 5, 6}
+	for _, x := range values {
+		w := x
+		w *= 2
+		fmt.Println(w)
+	}
+	// 	Output
+	// 0
+	// 2
+	// 4
+	// 6
+	// 8
+	// 10
+	// 12
+
+	a := 5
+	b := 5
+	c := 5
+	d := 5
+	e := 5
+
+	a += 1
+	b -= 1
+	c *= 2
+	d /= 3
+	e %= 3
+
+	fmt.Println(e)
+}
