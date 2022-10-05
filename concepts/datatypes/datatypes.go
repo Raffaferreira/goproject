@@ -3,7 +3,7 @@ package datatypes
 import "fmt"
 
 func main() {
-
+	integers()
 }
 
 func integers() {
@@ -13,5 +13,15 @@ func integers() {
 	fmt.Println(absoluteZero)
 
 	sum := 116 - 68
+	fmt.Println(sum)
+
+}
+
+func floatPointNumbers() {
+	fmt.Println(-459.67)
+	absoluteZero := 459.67
+	fmt.Println(absoluteZero)
+
+	var sum = 564.0 + 365.24
 	fmt.Println(sum)
 }
