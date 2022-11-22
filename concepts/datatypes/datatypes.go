@@ -2,8 +2,9 @@ package datatypes
 
 import "fmt"
 
-func main() {
+func Main() {
 	integers()
+	floatPointNumbers()
 }
 
 func integers() {
