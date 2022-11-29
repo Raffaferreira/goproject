@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func Main() {
+func Main2() {
 	str1 := " Hello,   World  ! "
 	fmt.Println(standardizeSpaces(str1))
 }
