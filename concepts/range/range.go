@@ -1,0 +1,5 @@
+package rangepackage
+
+func Main() {
+
+}
