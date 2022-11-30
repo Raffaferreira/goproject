@@ -5,6 +5,12 @@ import "fmt"
 func Main() {
 	integers()
 	floatPointNumbers()
+	constdatatype()
+}
+
+func constdatatype() {
+	const c bool = true
+	fmt.Println(c)
 }
 
 func integers() {
